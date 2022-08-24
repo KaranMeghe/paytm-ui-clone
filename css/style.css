@@ -629,6 +629,10 @@ video {
   width: 2rem;
 }
 
+.w-36 {
+  width: 9rem;
+}
+
 .max-w-7xl {
   max-width: 80rem;
 }
@@ -742,5 +746,9 @@ video {
 
   .md\:hidden {
     display: none;
+  }
+
+  .md\:w-48 {
+    width: 12rem;
   }
 }
