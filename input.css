@@ -1,3 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.nav-link {
+  @apply hover:bg-[#e7eef4] hover:py-2 hover:px-1 transition;
+}

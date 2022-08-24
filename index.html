@@ -4,10 +4,50 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Simple Tailwind Starter</title>
+    <title>Paytm clone</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./css/style.css" />
   </head>
-  <body>
-    <h1 class="text-red-300">Tailwind css</h1>
+  <body class="bg-body-clr">
+    <!-- Section Header navbar -->
+    <nav class="h-16 shadow">
+      <div
+        class="container max-w-7xl mx-auto my-auto flex items-center justify-between"
+      >
+        <!-- Logo -->
+        <img src="./assets/paytm_logo.png" alt="paytm logo" class="w-48" />
+        <!-- Navbar links -->
+        <ul class="flex space-x-8 text-lg hidden md:flex">
+          <li>
+            <a href="#" class="nav-link">Paytm For Customer</a>
+          </li>
+          <li>
+            <a href="#" class="nav-link">Paytm For Buisness</a>
+          </li>
+          <li>
+            <a href="#" class="nav-link">Company</a>
+          </li>
+          <li>
+            <a href="#" class="nav-link">Investor Relations</a>
+          </li>
+          <li>
+            <a href="#" class="nav-link">Career</a>
+          </li>
+        </ul>
+        <!-- Button -->
+        <buttton
+          class="relative bg-primary-blue px-4 py-[5px] rounded-[30px] w-[100px] text-[16px] text-gray0dark-3 text-bold hover:bg-secondary-blue transition"
+          >Sign In
+          <span class="absolute right-[2%] top-[1px] pl-1"
+            ><img src="./assets/user.svg" alt="user img" class="w-8" /></span
+        ></buttton>
+      </div>
+    </nav>
+    <!-- End of Section Header -->
   </body>
 </html>
