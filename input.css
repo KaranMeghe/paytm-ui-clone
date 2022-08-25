@@ -5,3 +5,7 @@
 .nav-link {
   @apply hover:bg-[#e7eef4] hover:py-2 hover:px-1 transition;
 }
+
+.btn {
+  @apply relative bg-[#000] text-[#fff] rounded-[30px] py-3 w-[63%] md:w-[23%] hover:bg-[#fff] hover:text-[#000] border transition;
+}
