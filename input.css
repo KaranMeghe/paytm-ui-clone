@@ -9,3 +9,10 @@
 .btn {
   @apply relative bg-[#000] text-[#fff] rounded-[30px] py-3 w-[63%] md:w-[23%] hover:bg-[#fff] hover:text-[#000] border transition;
 }
+
+.box {
+  @apply flex flex-col items-center md:items-start md:w-[20%] w-[50%] space-y-3 text-center p-4 mb-[10px] hover:bg-[#b2bec3];
+}
+.heading-white {
+  @apply text-[#fff] text-2xl md:text-4xl font-bold my-10 md:my-10 text-center md:text-start;
+}

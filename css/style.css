@@ -595,54 +595,6 @@ video {
   top: 1px;
 }
 
-.right-0 {
-  right: 0px;
-}
-
-.top-0 {
-  top: 0px;
-}
-
-.top-3 {
-  top: 0.75rem;
-}
-
-.top-5 {
-  top: 1.25rem;
-}
-
-.top-2 {
-  top: 0.5rem;
-}
-
-.top-\[2\%\] {
-  top: 2%;
-}
-
-.top-\[3\%\] {
-  top: 3%;
-}
-
-.top-\[5\%\] {
-  top: 5%;
-}
-
-.top-7 {
-  top: 1.75rem;
-}
-
-.top-10 {
-  top: 2.5rem;
-}
-
-.top-20 {
-  top: 5rem;
-}
-
-.top-40 {
-  top: 10rem;
-}
-
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -662,12 +614,12 @@ video {
   margin-top: 3rem;
 }
 
-.mt-7 {
-  margin-top: 1.75rem;
-}
-
 .mt-10 {
   margin-top: 2.5rem;
+}
+
+.mb-\[50px\] {
+  margin-bottom: 50px;
 }
 
 .flex {
@@ -702,20 +654,8 @@ video {
   width: 5rem;
 }
 
-.w-\[50\%\] {
-  width: 50%;
-}
-
-.w-1\/2 {
-  width: 50%;
-}
-
-.w-\[40\%\] {
-  width: 40%;
-}
-
-.w-\[35\%\] {
-  width: 35%;
+.w-16 {
+  width: 4rem;
 }
 
 .max-w-7xl {
@@ -730,8 +670,16 @@ video {
   flex-direction: column;
 }
 
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
 .items-center {
   align-items: center;
+}
+
+.items-baseline {
+  align-items: baseline;
 }
 
 .justify-center {
@@ -774,6 +722,11 @@ video {
   background-color: rgb(246 246 246 / var(--tw-bg-opacity));
 }
 
+.bg-secondary-blue {
+  --tw-bg-opacity: 1;
+  background-color: rgb(15 74 138 / var(--tw-bg-opacity));
+}
+
 .p-2 {
   padding: 0.5rem;
 }
@@ -796,6 +749,11 @@ video {
 .px-5 {
   padding-left: 1.25rem;
   padding-right: 1.25rem;
+}
+
+.py-5 {
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
 }
 
 .pl-1 {
@@ -845,6 +803,11 @@ video {
 .text-gray0dark-3 {
   --tw-text-opacity: 1;
   color: rgb(245 247 250 / var(--tw-text-opacity));
+}
+
+.text-\[\#fff\] {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .shadow {
@@ -915,6 +878,58 @@ video {
   }
 }
 
+.box {
+  margin-bottom: 10px;
+  display: flex;
+  width: 50%;
+  flex-direction: column;
+  align-items: center;
+}
+
+.box > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(0.75rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(0.75rem * var(--tw-space-y-reverse));
+}
+
+.box {
+  padding: 1rem;
+  text-align: center;
+}
+
+.box:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(178 190 195 / var(--tw-bg-opacity));
+}
+
+@media (min-width: 768px) {
+  .box {
+    width: 20%;
+    align-items: flex-start;
+  }
+}
+
+.heading-white {
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+  text-align: center;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 700;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+@media (min-width: 768px) {
+  .heading-white {
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+    text-align: start;
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+}
+
 .hover\:bg-secondary-blue:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(15 74 138 / var(--tw-bg-opacity));
@@ -929,16 +944,8 @@ video {
     right: 0px;
   }
 
-  .md\:top-40 {
-    top: 10rem;
-  }
-
   .md\:top-1\/4 {
     top: 25%;
-  }
-
-  .md\:top-2\/3 {
-    top: 66.666667%;
   }
 
   .md\:mx-2 {
@@ -950,36 +957,12 @@ video {
     margin-top: 9rem;
   }
 
-  .md\:mt-20 {
-    margin-top: 5rem;
-  }
-
-  .md\:mt-40 {
-    margin-top: 10rem;
-  }
-
-  .md\:mt-5 {
-    margin-top: 1.25rem;
-  }
-
-  .md\:mt-8 {
-    margin-top: 2rem;
-  }
-
-  .md\:mt-10 {
-    margin-top: 2.5rem;
-  }
-
-  .md\:mt-\[10\%\] {
-    margin-top: 10%;
-  }
-
-  .md\:mt-\[7\%\] {
-    margin-top: 7%;
-  }
-
   .md\:mt-\[5\%\] {
     margin-top: 5%;
+  }
+
+  .md\:mt-20 {
+    margin-top: 5rem;
   }
 
   .md\:flex {
@@ -988,28 +971,6 @@ video {
 
   .md\:w-48 {
     width: 12rem;
-  }
-
-  .md\:w-1\/2 {
-    width: 50%;
-  }
-
-  .md\:w-\[30\%\] {
-    width: 30%;
-  }
-
-  .md\:w-full {
-    width: 100%;
-  }
-
-  .md\:w-fit {
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content;
-  }
-
-  .md\:w-\[35\%\] {
-    width: 35%;
   }
 
   .md\:w-\[38\%\] {
@@ -1032,8 +993,18 @@ video {
     flex-direction: row;
   }
 
+  .md\:flex-nowrap {
+    flex-wrap: nowrap;
+  }
+
   .md\:justify-between {
     justify-content: space-between;
+  }
+
+  .md\:space-y-2 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-y-reverse: 0;
+    margin-top: calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));
+    margin-bottom: calc(0.5rem * var(--tw-space-y-reverse));
   }
 
   .md\:p-0 {
