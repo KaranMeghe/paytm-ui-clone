@@ -7,7 +7,7 @@
 }
 
 .btn {
-  @apply relative bg-[#000] text-[#fff] rounded-[30px] py-3 w-[63%] md:w-[23%] hover:bg-[#fff] hover:text-[#000] border transition;
+  @apply relative bg-[#000] text-[#fff] rounded-[30px] py-3 w-[63%]  md:w-[23%] hover:bg-[#fff] hover:text-[#000] border transition;
 }
 
 .box {
